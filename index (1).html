@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Diagramma decisionale interattivo sul percorso degli allarmi bomba, basato sulla circolare del Viminale riportata da ANSA il 13 novembre 2026.">
+  <title>RADAR QN — Allarme bomba: chi decide</title>
+  <link rel="stylesheet" href="assets/radar.css">
+</head>
+<body>
+  <main id="radar-root"></main>
+  <script src="assets/scenari.js"></script>
+  <script src="assets/radar-flow.js"></script>
+  <script>
+    window.RadarFlow.mount(document.getElementById('radar-root'), {
+      scenarios: window.RADAR_SCENARIOS,
+      title: 'Allarme bomba, chi decide|E quando si evacua',
+      subtitle: 'Dall’email seriale agli oggetti sospetti: scegli il caso, scopri chi interviene e quando può essere proposta l’evacuazione.'
+    });
+  </script>
+</body>
+</html>

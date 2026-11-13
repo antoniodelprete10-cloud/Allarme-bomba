@@ -1,0 +1,50 @@
+sdk_version: 3
+id: radar-qn-flusso-allarmi-bomba-2026
+version: 1.0.0
+name: 'RADAR QN | Allarme bomba: diagramma decisionale'
+author: Redazione RADAR QN
+description: Diagramma decisionale interattivo a comparsa progressiva, in stile RADAR
+  QN.
+settings:
+- property: chart_title
+  name: Titolo (separa le righe con |)
+  type: string
+- property: chart_subtitle
+  name: Sommario
+  type: text
+data:
+- name: ID scenario
+  dataset: scenari
+  key: id
+  type: column
+  column: Scenari::A
+- name: Etichetta menu
+  dataset: scenari
+  key: label
+  type: column
+  column: Scenari::B
+- name: Segnalazione
+  dataset: scenari
+  key: signal
+  type: column
+  column: Scenari::C
+- name: Elemento di rischio
+  dataset: scenari
+  key: risk
+  type: column
+  column: Scenari::D
+- name: Valutazione
+  dataset: scenari
+  key: assessment
+  type: column
+  column: Scenari::E
+- name: Tipo scenario
+  dataset: scenari
+  key: kind
+  type: column
+  column: Scenari::F
+- name: Nota sulla fonte
+  dataset: scenari
+  key: source_note
+  type: column
+  column: Scenari::G
